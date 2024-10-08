@@ -7,19 +7,26 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 <body>
-    
     <div class="container">
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-          Something alert
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbox">Show modal</button>
+      <div class="modal fade" id="modalbox">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente modi aliquam velit quidem, iure quos at vitae nisi hic maiores quaerat dolores dignissimos voluptatem nihil tempora dolorem alias. Tempore temporibus impedit, esse nisi qui iure molestiae nesciunt ex! Perspiciatis, dolore, at fugiat veniam facilis laudantium eligendi reprehenderit eum illo corporis doloremque blanditiis nam ut consequuntur mollitia quia sunt odit. Veritatis vitae natus et cumque obcaecati! Expedita nisi consequatur, laborum vel dignissimos cum eveniet quibusdam dolor perspiciatis explicabo voluptatibus autem quia praesentium assumenda labore amet placeat id, adipisci possimus corrupti repellendus. Quaerat fugit iure facere ad doloribus doloremque aut culpa quod!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
-        
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+      </div>
     </div>
-
     <script src="./js/bootstrap.js"></script>
 </body>
 </html>
